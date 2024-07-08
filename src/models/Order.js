@@ -11,8 +11,7 @@ const Order = sqldb.define({
     customerId : {
         type : DataTypes.INTEGER,
         references : {
-            model : Customer,
-            key : id
+            model : Customer
         }
     },
     orderDate : {
